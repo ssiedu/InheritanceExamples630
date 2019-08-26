@@ -1,18 +1,39 @@
 
 public class B extends A {
 
-    public void f1(){
-        System.out.println("Hello From F1 of B");
-    }
+    int data = 500;
+
     
-    public void f2() {
-        System.out.println("Hello From F2 of B");
-    }
-   
-    public static void main(String args[]) {
-        B ob=new B();
-        ob.f1();
-        ob.f2();
+    B() {
         
+        super(10);
+        System.out.println("B-0");
+    }
+
+    B(int p) {
+        super(1,2);
+        System.out.println("B-1");
+    }
+
+    B(int p, int q) {
+        super(5);
+        System.out.println("B-2");
+    }
+
+    public void show() {
+        System.out.println("Welcome From Show of B");
+    }
+
+    public void display() {
+        super.show();
+        //System.out.println(super.data);
+    }
+
+    public static void main(String args[]) {
+        
+        B ob = new B(10,20);
+        
+        
+        //ob.display();
     }
 }

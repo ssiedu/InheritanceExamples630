@@ -20,5 +20,12 @@ public class University {
         s2.showPData();
         s2.showMData();
         s2.result(48);
+        System.out.println("_________________________");
+        MDStudent s3=new MDStudent();
+        s3.setPData(113, "CCC");
+        s3.setMData(2);
+        s3.showPData();
+        s3.showMData();
+        s3.result(55);
     }
 }
