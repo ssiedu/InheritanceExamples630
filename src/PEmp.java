@@ -2,6 +2,10 @@ public class PEmp extends Emp {
     private int sal;
     private String desg;
     
+    public void computeSalary(){
+        System.out.println("Computing Salary Of PEmp");
+        //
+    }
     public void info(){
         super.info();
         System.out.println(desg+","+sal);
